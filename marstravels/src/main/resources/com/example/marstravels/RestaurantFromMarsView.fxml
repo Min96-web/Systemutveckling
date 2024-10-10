@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marstravels.HotellController">
+   <top>
+      <VBox prefHeight="135.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="88.0" prefWidth="600.0" style="-fx-background-color: #68349A;">
+               <children>
+                  <ImageView fx:id="imgbtn_Logo" fitHeight="72.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="https://i.ibb.co/xCzRFnB/Screenshot-2022-02-25-at-09-13-07.png" />
+                     </image>
+                  </ImageView>
+                  <Region prefHeight="90.0" prefWidth="257.0" HBox.hgrow="ALWAYS" />
+                  <ImageView fx:id="imgbtn_LogIn" fitHeight="72.0" fitWidth="178.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="https://i.ibb.co/cCbQSCX/Screenshot-2022-02-25-at-09-12-50.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgbtn_Cart" fitHeight="70.0" fitWidth="87.0" layoutX="388.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="https://i.ibb.co/rbSnNfS/Screenshot-2022-02-25-at-09-12-59.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #c689f1#c689f1;">
+               <children>
+                  <Button fx:id="btn_Room" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Hytter">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btn_Restaurant" layoutX="10.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Restauranger">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn_Events" layoutX="151.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Evenemang">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="61.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Hotell">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="264.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="267.0" prefWidth="553.0">
+               <children>
+                  <VBox prefHeight="265.0" prefWidth="293.0">
+                     <children>
+                        <TitledPane animated="false" expanded="false" text="MarsDonald" VBox.vgrow="ALWAYS">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="449.0">
+                                 <children>
+                                    <Text layoutX="21.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Utbud är 2 olika frukostar, 3 olika luncher och 4 olika middagar, samt 3 olika kakor/desserter att tillgå mellan måltiderna." wrappingWidth="258.781494140625" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" layoutX="10.0" layoutY="10.0" text="Marsian Buffé" VBox.vgrow="ALWAYS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Text layoutX="15.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marsian Buffé är restaurangen som har buffé dygnet runt med olika rätter som kan passa oavsett tid på dagen. Alltifrån våfflor och omeletter till grillat och pizza." wrappingWidth="260.3866882324219" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" layoutX="10.0" layoutY="143.0" text="Tellus Home" VBox.vgrow="ALWAYS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Text layoutX="18.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vi har också restaurangen Tellus Home som serverar en enklare frukostbuffé, 5 olika luncher (kött/fisk/veg/soppa/pasta) och 6 olika middagar (2 alternativ av fisk/kött/veg). Deras dessertbuffé som är öppen mellan måltiderna består av 3-5 olika kakor/desserter plus dryck." wrappingWidth="256.3908386230469" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" layoutX="10.0" layoutY="187.0" text="Spaceview" VBox.vgrow="ALWAYS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Text layoutX="18.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spaceview restaurangen har specialiserat sig på ny och kreativ mat där kockarna tar favoriträtter från jorden och med inspiration från rymden gör om dem och ger dig en ny smakupplevelse." wrappingWidth="251.06304931640625" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="265.0" prefWidth="293.0">
+                     <children>
+                        <TitledPane animated="false" expanded="false" text="Budget ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="449.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Budget 1: Samtliga måltider under resan intas på MarsDonalds." wrappingWidth="286.75238037109375" />
+                                    <Text layoutX="12.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Budget 2: All frukost och lunch intas på MarsDonalds medan mellanmål och middagarna intas på Marsian Buffé." wrappingWidth="270.46392822265625" />
+                                    <Text layoutX="14.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Budget 3: Samtliga måltider under resan intas på Marsian Buffé." wrappingWidth="286.75238037109375" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" layoutX="10.0" layoutY="10.0" text="Mellan" VBox.vgrow="ALWAYS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Text layoutX="10.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mellan 1: All frukost intas på MarsDonalds, mellanmål och lunch på Marsian Buffé medan middagarna intas på Tellus Home." wrappingWidth="267.04638671875" />
+                                    <Text layoutX="7.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mellan 2: All måltider förutom middag intas på Marsian Buffé. Middagarna intas på Tellus Home." wrappingWidth="269.7103271484375" />
+                                    <Text layoutX="10.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mellan 3: Samtliga måltider intas på Tellus Home." wrappingWidth="318.9923095703125" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" expanded="false" layoutX="10.0" layoutY="143.0" text="Lyx" VBox.vgrow="ALWAYS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Text layoutX="15.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lyx 1: All måltider förutom middag intas på Tellus Home medan middagarna intas på SpaceView." wrappingWidth="272.3741455078125" />
+                                    <Text layoutX="14.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lyx 2:  Frukost och mellanmål intas på Tellus Home medan lunch och middag intas på SpaceView" wrappingWidth="269.71026611328125" />
+                                    <Text layoutX="11.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lyx 3: Samtliga måltider intas på SpaceView. För de som valt hyttalternativet Svit serveras frukosten i hytten från SpaceView." wrappingWidth="247.06719970703125" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <Pane prefHeight="1.0" prefWidth="293.0">
+                           <children>
+                              <ChoiceBox fx:id="chcbx_FoodPackage" layoutX="6.0" layoutY="144.0" prefWidth="150.0" />
+                              <Button fx:id="btn_CartFood" layoutX="173.0" layoutY="143.0" mnemonicParsing="false" text="Lägg till i kundvagn" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
