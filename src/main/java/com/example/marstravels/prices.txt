@@ -1,0 +1,22 @@
+Svit;1200000
+Spaceside;700000
+Inside;300000
+Economy;180000
+Budget 1;27000
+Budget 2;40000
+Budget 3;54000
+Mellan 1;76000
+Mellan 2;90000
+Mellan 3;100000
+Lyx 1;120000
+Lyx 2;150000
+Lyx 3;200000
+Polar Lansdorp;3500
+Polar Wielders;5000
+Hotel Phobos, enkelrum;7500
+Hotel Phobos, dubbelrum;12000
+Hotel Deimos, enkelrum;7500
+Hotel Deimos, dubbelrum;12000
+Royal City, enkel lyx;20000
+Royal City, dubbel lyx;35000
+Royal City, svit;50000

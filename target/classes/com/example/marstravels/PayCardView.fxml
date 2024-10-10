@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marstravels.PayCardController">
+   <top>
+      <VBox prefHeight="135.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="88.0" prefWidth="600.0" style="-fx-background-color: #68349A;">
+               <children>
+                  <ImageView fx:id="imgbtn_Logo" fitHeight="72.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="https://i.ibb.co/xCzRFnB/Screenshot-2022-02-25-at-09-13-07.png" />
+                     </image>
+                  </ImageView>
+                  <Region prefHeight="90.0" prefWidth="257.0" HBox.hgrow="ALWAYS" />
+                  <ImageView fx:id="imgbtn_LogIn" fitHeight="72.0" fitWidth="178.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="https://i.ibb.co/cCbQSCX/Screenshot-2022-02-25-at-09-12-50.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btn_CartImg" minWidth="-Infinity" mnemonicParsing="false" onAction="#openCartView" prefHeight="86.0" prefWidth="104.0" style="-fx-background-color: #68349AFF;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fx:id="imgbtn_CartInBtn" fitHeight="64.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="https://i.ibb.co/rbSnNfS/Screenshot-2022-02-25-at-09-12-59.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #c689f1#c689f1;">
+               <children>
+                  <Button fx:id="btn_Room" minWidth="-Infinity" mnemonicParsing="false" onAction="#openRoomView" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Hytter">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btn_Restaurant" layoutX="10.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#openRestaurantView" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Restauranger">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btn_Event" layoutX="151.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#openEventView" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Evenemang">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="61.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#openHotelView" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Hotell">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="265.0" prefWidth="398.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="267.0" prefWidth="553.0">
+               <children>
+                  <AnchorPane prefHeight="265.0" prefWidth="599.0">
+                     <children>
+                        <TextField fx:id="txtbox_Amount" layoutX="218.0" layoutY="95.0" promptText="Minst 20 000 kr" />
+                        <Label layoutX="218.0" layoutY="27.0" prefHeight="17.0" prefWidth="159.0" text="Vanligen att fylla på ditt kort:" />
+                        <TextField fx:id="txtbox_CustomerID" layoutX="218.0" layoutY="56.0" promptText="Fyll i kundnummer" />
+                        <Button fx:id="btn_return" layoutX="218.0" layoutY="213.0" mnemonicParsing="false" onAction="#openCartView" text="Tillbaka" />
+                        <Button fx:id="btn_Accept" layoutX="330.0" layoutY="213.0" mnemonicParsing="false" onAction="#addAmount" text="Fyll på" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
