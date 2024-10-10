@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marstravels.HotellController">
+    <top>
+        <VBox prefHeight="135.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="88.0" prefWidth="600.0" style="-fx-background-color: #68349A;">
+                    <children>
+                        <ImageView fx:id="imgbtn_Logo" fitHeight="72.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                            <image>
+                                <Image url="https://i.ibb.co/xCzRFnB/Screenshot-2022-02-25-at-09-13-07.png" />
+                            </image>
+                        </ImageView>
+                        <Region prefHeight="90.0" prefWidth="257.0" HBox.hgrow="ALWAYS" />
+                        <ImageView fx:id="imgbtn_LogIn" fitHeight="72.0" fitWidth="178.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                            <image>
+                                <Image url="https://i.ibb.co/cCbQSCX/Screenshot-2022-02-25-at-09-12-50.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="imgbtn_Cart" fitHeight="70.0" fitWidth="87.0" layoutX="388.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                            <image>
+                                <Image url="https://i.ibb.co/rbSnNfS/Screenshot-2022-02-25-at-09-12-59.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #c689f1#c689f1;">
+                    <children>
+                        <Button fx:id="btn_Room" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Hytter">
+                            <HBox.margin>
+                                <Insets left="15.0" right="15.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btn_Restaurant" layoutX="10.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Restauranger">
+                            <HBox.margin>
+                                <Insets left="15.0" right="15.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btn_Events" layoutX="151.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Evenemang">
+                            <HBox.margin>
+                                <Insets left="15.0" right="15.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button layoutX="61.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Hotell">
+                            <HBox.margin>
+                                <Insets left="15.0" right="15.0" />
+                            </HBox.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <VBox prefHeight="265.0" prefWidth="398.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="267.0" prefWidth="553.0">
+                    <children>
+                        <VBox prefHeight="332.0" prefWidth="600.0">
+                     <children>
+                        <Accordion>
+                          <panes>
+                            <TitledPane animated="false" text="Polar Lansdorp">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Är båda enkla hotell där man delar 6-bäddsrum med andra människor, man betalar alltså för en bädd.  Varje rum har egen dusch och toalett. Det finns en matsal där måltiderna serveras vid bestämda tider. Hotellet har flera olika lounger där man kan umgås, njuta vid den konstgjorda brasan i öppna spisen, läsa böcker, lyssna på musik eller spela spel. Det finns också en träningslokal för både kondition och styrketräning, samt gruppövningar.  " wrappingWidth="342.1367301940918" />
+                                          <Text layoutX="430.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 500 kr/bädd" wrappingWidth="153.336669921875" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="Polar Wielders">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="7.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Är båda enkla hotell där man delar 4-bäddsrum med andra människor, man betalar alltså för en bädd.  Varje rum har egen dusch och toalett. Det finns en matsal där måltiderna serveras vid bestämda tider. Hotellet har flera olika lounger där man kan umgås, njuta vid den konstgjorda brasan i öppna spisen, läsa böcker, lyssna på musik eller spela spel. Det finns också en träningslokal för både kondition och styrketräning, samt gruppövningar.  " wrappingWidth="342.1367301940918" />
+                                          <Text layoutX="450.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 000 kr/bädd" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="Hotel Phobos">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="8.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ligger vid ekvatorn på Mars och båda hotellen har både enkelrum och dubbelrum med egen dusch och toalett. Varje rum är också inredd med en liten soffa och tv (filmer, serier och spel finns tillgängliga). I restaurangen serveras måltiderna, men man kan också få maten serverad på rummen. Flera olika lounger med olika teman finns så som bibliotek, biljardrum (där även andra spel finns), musikrum och bio. Träningslokal med redskap för styrke- och konditionsträning finns samt tränare för gruppövningar." wrappingWidth="410.1367301940918" />
+                                          <Text layoutX="465.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enkelrum: 7 500 kr" wrappingWidth="127.73675537109375" />
+                                          <Text layoutX="465.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dubbelrum: 12 000  kr" wrappingWidth="127.73675537109375" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                              <TitledPane animated="false" layoutX="10.0" layoutY="61.0" text="Hotel Deimos">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="7.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ligger vid ekvatorn på Mars och har både enkelrum och dubbelrum med egen dusch och toalett. Varje rum är också inredd med en liten soffa och tv (filmer, serier och spel finns tillgängliga). I restaurangen serveras måltiderna, men man kan också få maten serverad på rummen. Flera olika lounger med olika teman finns så som bibliotek, biljardrum (där även andra spel finns), musikrum och bio. Träningslokal med redskap för styrke- och konditionsträning finns samt tränare för gruppövningar." wrappingWidth="410.1367301940918" />
+                                          <Text layoutX="450.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enkelrum: 7 500 kr" wrappingWidth="127.73675537109375" />
+                                          <Text layoutX="450.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dubbelrum: 12 000  kr" wrappingWidth="127.73675537109375" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" layoutX="10.0" layoutY="87.0" text="Royal City">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="7.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ett charmigt lyxhotell insprängt i berget i dalgången i Valles Marineris. Här finns sviter med dubbelsäng och vardagsrum där man kan få samtliga måltider serverade. Lyxrum med enkel eller dubbelbäddar och mini-loungedel finns också att tillgå. Restaurangen har de bästa kockarna och maten som serveras är inte bara en njutning smakmässigt utan även hälsosam. Lyxigt inredda bibliotek, teatersalong, lounge för att umgås och träningslokaler där flertalet personliga tränare är redo att skapa passande träningsprogram.  I närheten finns en galleria." wrappingWidth="410.13679122924805" />
+                                          <Text layoutX="461.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enkel lyx: 20 000 kr" wrappingWidth="122.13677978515625" />
+                                          <Text layoutX="461.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dubbel lyx: 35 000 kr" wrappingWidth="122.13677978515625" />
+                                          <Text layoutX="461.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Svit: 50 000 kr" wrappingWidth="122.13677978515625" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

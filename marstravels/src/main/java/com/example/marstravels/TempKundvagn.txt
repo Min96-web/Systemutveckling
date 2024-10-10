@@ -1,0 +1,14 @@
+1;Spaceside
+2;Mellan 2
+3.0;Badhus
+3i;1
+4.0;Alien
+4i;1
+6.0;Haru Crew
+6i;1
+5.0;Engla the Alien
+5i;1
+9;Polar Wielders;
+7;50000
+8;zmh;20000
+Till

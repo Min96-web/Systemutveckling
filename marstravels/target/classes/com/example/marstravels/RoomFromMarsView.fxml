@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marstravels.RoomController">
+   <top>
+      <VBox prefHeight="135.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="88.0" prefWidth="600.0" style="-fx-background-color: #68349A;">
+               <children>
+                  <ImageView fx:id="imgbtn_Logo" fitHeight="72.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="https://i.ibb.co/xCzRFnB/Screenshot-2022-02-25-at-09-13-07.png" />
+                     </image>
+                  </ImageView>
+                  <Region prefHeight="90.0" prefWidth="257.0" HBox.hgrow="ALWAYS" />
+                  <ImageView fx:id="imgbtn_LogIn" fitHeight="72.0" fitWidth="178.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="https://i.ibb.co/cCbQSCX/Screenshot-2022-02-25-at-09-12-50.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btn_CartImg" minWidth="-Infinity" mnemonicParsing="false" onAction="#openCartView" prefHeight="86.0" prefWidth="104.0" style="-fx-background-color: #68349AFF;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fx:id="imgbtn_CartInBtn" fitHeight="64.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="https://i.ibb.co/rbSnNfS/Screenshot-2022-02-25-at-09-12-59.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #c689f1#c689f1;">
+               <children>
+                  <Button fx:id="btn_Room" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Hytter">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn_Restaurant" layoutX="10.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Restauranger">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btn_Event" layoutX="151.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Evenemang">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="61.0" layoutY="10.0" minWidth="-Infinity" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #d0d8e8#d0d8e8;" text="Hotell">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="265.0" prefWidth="398.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="267.0" prefWidth="553.0">
+               <children>
+                  <VBox prefHeight="332.0" prefWidth="600.0">
+                     <children>
+                        <Accordion>
+                           <panes>
+                              <TitledPane animated="false" text="Svit">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="449.0">
+                                       <children>
+                                          <AnchorPane layoutX="272.0" layoutY="49.0" prefHeight="95.0" prefWidth="312.0" style="-fx-background-color: #EAECEE;">
+                                             <children>
+                                                <Label layoutX="40.0" layoutY="62.0" text="1 200 000 kr / person">
+                                                   <effect>
+                                                      <InnerShadow blurType="TWO_PASS_BOX" />
+                                                   </effect>
+                                                </Label>
+                                                <Button fx:id="btn_CartSvit" layoutX="182.0" layoutY="58.0" mnemonicParsing="false" text="Lägg till i kundvagn" />
+                                             </children>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </AnchorPane>
+                                          <Text layoutX="18.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hytt med utsikt över rymden, separat vardags- och sovrum inklusive dubbelsäng. Dessutom skärm med stort utbud av film, serier, musik och spel. Badrum med badkar/dusch och toalett. Frukost ingår i priset." wrappingWidth="254.75238037109375" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </TitledPane>
+                              <TitledPane animated="false" expanded="false" text="Spaceside">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hytt med utsikt över rymden, dubbelsäng. Dessutom skärm med stortutbud av film, serier, musik och spel. Badrum med dusch och toalett." wrappingWidth="318.9923095703125" />
+                                          <AnchorPane layoutX="277.0" layoutY="52.0" prefHeight="95.0" prefWidth="312.0" style="-fx-background-color: #EAECEE;">
+                                             <children>
+                                                <Label layoutX="54.0" layoutY="62.0" text="700 000 kr / person" />
+                                                <Button fx:id="btn_CartSpaceSide" layoutX="182.0" layoutY="58.0" mnemonicParsing="false" text="Lägg till i kundvagn" />
+                                             </children>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" expanded="false" text="Inside">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insideshytt med två underbäddar som kan ändras till soffa dagtid. Badrum med dusch och toalett." wrappingWidth="318.9923095703125" />
+                                          <AnchorPane layoutX="257.0" layoutY="55.0" prefHeight="95.0" prefWidth="312.0" style="-fx-background-color: #EAECEE;">
+                                             <children>
+                                                <Label layoutX="54.0" layoutY="63.0" text="300 000 kr / person" />
+                                                <Button fx:id="btn_CartInside" layoutX="182.0" layoutY="58.0" mnemonicParsing="false" text="Lägg till i kundvagn" />
+                                             </children>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" expanded="false" text="Economy">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insideshytt med 4 bäddar (två under- och överbäddar) därunderbäddarna kan ändras till soffa dagtid. Dusch finns till hytten, men toaletter finns i korridoren." wrappingWidth="318.9923095703125" />
+                                          <AnchorPane layoutX="273.0" layoutY="58.0" prefHeight="95.0" prefWidth="312.0" style="-fx-background-color: #EAECEE;">
+                                             <children>
+                                                <Label layoutX="53.0" layoutY="63.0" text="180 000 kr / person" />
+                                                <Button fx:id="btn_CartEconomy" layoutX="182.0" layoutY="58.0" mnemonicParsing="false" text="Lägg till i kundvagn" />
+                                             </children>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                           </panes>
+                        </Accordion>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
